@@ -56,7 +56,7 @@ class Game:
             self.turnA = True
 
         self.showTabuleiro()
-        self.turn += self.turn
+        self.turn += 1
 
     def setPosition(self, letter, player):
         if not letter in ("A", "B", "C", "D", "E", "F", "G", "H", "I"):
@@ -74,6 +74,7 @@ class Game:
         self.tabuleiro[pos1][pos2] = player
 
     def showTabuleiro(self):
+        print(f'Turno - {self.turn} \n')
         print(f'[A][B][C] | [{self.tabuleiro[0][0]}][{self.tabuleiro[0][1]}][{self.tabuleiro[0][2]}]')
         print(f'[D][E][F] | [{self.tabuleiro[1][0]}][{self.tabuleiro[1][1]}][{self.tabuleiro[1][2]}]')
         print(f'[G][H][I] | [{self.tabuleiro[2][0]}][{self.tabuleiro[2][1]}][{self.tabuleiro[2][2]}]')
