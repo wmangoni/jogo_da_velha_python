@@ -9,4 +9,4 @@ while game.winner == 0:
 if game.winner == -1:
     print("Empate")
 else:
-    print(f'O Jogador {game.winner} ganhou')
+    print(f'O Jogador {game.winner} ganhou!!!')
